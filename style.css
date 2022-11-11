@@ -31,3 +31,15 @@ footer{
     display: grid;
     grid-area: f;
 }
+
+ul{
+    margin: 0;
+    padding-left: 0;
+    max-width: 50%;
+}
+
+li{
+    text-align: center;
+    list-style-type: none;
+    display:inline;
+}
