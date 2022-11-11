@@ -1,0 +1,33 @@
+body{
+    
+}
+
+
+main{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "h h  h"
+                         "n n n"
+                         "a a a"
+                         "f f f";
+}
+header{
+    display: grid;
+    grid-area: h;
+}
+nav{
+    display: grid;
+    grid-area: n;
+}
+
+article{
+    display: grid;
+    grid-area: a;
+}
+
+footer{
+    display: grid;
+    grid-area: f;
+}
