@@ -1,35 +1,26 @@
-body{
-    
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "n n n"
+    "a a a"
+    "f f f";
+    background-color: grey;
 }
 
-
-main{
-    width: 80%;
-    max-width: 800px;
-    margin: auto;
-    display: grid;
-    grid-template-areas: "h h h"
-                         "n n n"
-                         "a a a"
-                         "f f f";
-}
-header{
-    display: grid;
-    grid-area: h;
-}
-nav{
-    display: grid;
-    grid-area: n;
+header {
+  grid-area: h;
 }
 
-article{
-    display: grid;
-    grid-area: a;
+nav {
+  grid-area: n;
 }
 
-footer{
-    display: grid;
-    grid-area: f;
+article {
+  grid-area: a;
 }
 
 ul{
@@ -45,6 +36,7 @@ li{
     text-align: center;
     list-style-type: none;
     display:inline;
+    word-spacing: 50px;
 }
 
 li a{
@@ -62,4 +54,29 @@ footer{
     margin: auto;
     text-align: center;
     font-size: x-large;
+}
+footer {
+  grid-area: f;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  max-width: 50%;
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  li {
+    display: block;
+  }
+}
+
+body{
+    background-image: url(kepek/mac.jpg);
 }
